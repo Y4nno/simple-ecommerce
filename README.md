@@ -21,13 +21,6 @@ A full-stack e-commerce application with a customer-facing store and an admin da
 - **Styling:** Custom CSS
 - **Persistence:** Supabase (products, orders) + localStorage (cart, order tracking)
 
-## Tech Stack Rationale
-
-- **React + Vite** for a fast, component-based frontend with hot reload during development.
-- **Supabase** as an all-in-one backend: Postgres database, auto-generated REST API, real authentication, and Row Level Security — avoided building a custom Node/Express backend given the timeline.
-- **Context API** for cart and admin-auth state, since both need to be accessible from multiple unrelated components (product cards, cart page, checkout, admin sidebar) without prop-drilling.
-- **localStorage** for cart persistence (per requirement) and lightweight "My Orders" tracking on the customer side, since the assessment does not require customer accounts.
-
 ## Setup Instructions
 
 1. Clone the repository:
@@ -73,7 +66,6 @@ This project expects the following Supabase tables: `Product`, `Category`, `Orde
 3. Adding to cart stores the item in a shared Cart Context, persisted to `localStorage` so it survives page refresh.
 4. On the Cart page, the customer can adjust quantities, remove items, and see a live total before proceeding to Checkout.
 5. Checkout collects customer and delivery info, writes a new row to the `Order` table and corresponding rows to `Order_Item`, then shows a confirmation screen with a generated order number.
-6. The order number is also saved to `localStorage` so the customer can revisit "My Orders" later and see live order status pulled from Supabase.
 
 **Admin side:**
 1. Admin logs in via real Supabase Authentication at `/admin/login`.
