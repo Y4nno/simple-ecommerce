@@ -2,25 +2,6 @@
 
 A full-stack e-commerce application with a customer-facing store and an admin dashboard, built with React and Supabase.
 
-## Live Links
-
-- **Customer Website:** https://simple-ecommerce-vert.vercel.app/
-- **Admin Dashboard:** https://simple-ecommerce-vert.vercel.app/admin/login
-- **GitHub Repository:** https://github.com/Y4nno/simple-ecommerce
-
-## Admin Login Credentials
-
-- **Email:** admin@admin.com
-- **Password:** 123123
-
-## Technologies Used
-
-- **Frontend:** React (Vite), React Router
-- **Backend / Database:** Supabase (PostgreSQL, Row Level Security, Auth)
-- **State Management:** React Context API (Cart, Admin Auth)
-- **Styling:** Custom CSS
-- **Persistence:** Supabase (products, orders) + localStorage (cart, order tracking)
-
 ## Setup Instructions
 
 1. Clone the repository:
