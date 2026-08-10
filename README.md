@@ -1,4 +1,4 @@
-# Simple E-Commerce Website — CubeTech Web Development Intern Assessment
+# Simple E-Commerce Website
 
 A full-stack e-commerce application with a customer-facing store and an admin dashboard, built with React and Supabase.
 
