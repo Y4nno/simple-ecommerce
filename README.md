@@ -4,9 +4,9 @@ A full-stack e-commerce application with a customer-facing store and an admin da
 
 ## Live Links
 
-- **Customer Website:** [PASTE_LIVE_CUSTOMER_URL_HERE]
-- **Admin Dashboard:** [PASTE_LIVE_URL_HERE]/admin/login
-- **GitHub Repository:** [PASTE_GITHUB_REPO_URL_HERE]
+- **Customer Website:** https://simple-ecommerce-vert.vercel.app/
+- **Admin Dashboard:** https://simple-ecommerce-vert.vercel.app/admin/login
+- **GitHub Repository:** https://github.com/Y4nno/simple-ecommerce
 
 ## Admin Login Credentials
 
@@ -32,7 +32,7 @@ A full-stack e-commerce application with a customer-facing store and an admin da
 
 1. Clone the repository:
    ```
-   git clone [YOUR_REPO_URL]
+   git clone https://github.com/Y4nno/simple-ecommerce
    cd ecommerce-app
    ```
 
@@ -42,10 +42,6 @@ A full-stack e-commerce application with a customer-facing store and an admin da
    ```
 
 3. Create a `.env` file in the project root with your own Supabase project credentials:
-   ```
-   VITE_SUPABASE_URL=your_supabase_project_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
 
 4. Run the development server:
    ```
