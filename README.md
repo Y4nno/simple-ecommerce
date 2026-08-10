@@ -32,7 +32,7 @@ A full-stack e-commerce application with a customer-facing store and an admin da
 
 1. Clone the repository:
    ```
-   git clone [YOUR_REPO_URL]
+   git clone https://github.com/Y4nno/simple-ecommerce.git
    cd ecommerce-app
    ```
 
