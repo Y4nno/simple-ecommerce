@@ -32,7 +32,7 @@ A full-stack e-commerce application with a customer-facing store and an admin da
 
 1. Clone the repository:
    ```
-   git clone https://github.com/Y4nno/simple-ecommerce
+   git clone [YOUR_REPO_URL]
    cd ecommerce-app
    ```
 
@@ -42,6 +42,10 @@ A full-stack e-commerce application with a customer-facing store and an admin da
    ```
 
 3. Create a `.env` file in the project root with your own Supabase project credentials:
+   ```
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
 4. Run the development server:
    ```
