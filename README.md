@@ -107,7 +107,7 @@ Cart
 <img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/bb797caf-79a4-4fc8-9c2d-cc98d80e2cf1" />
 
 Checkout
-<img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/43ec35dd-4496-4db1-982e-5a150f95a45f" />
+<img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/872652ef-c87a-44cc-8bf2-36abf0b0fc7d" />
 
 Products
 <img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/94e3a668-6994-49d5-b320-e9496db7431a" />
