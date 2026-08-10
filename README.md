@@ -4,9 +4,9 @@ A full-stack e-commerce application with a customer-facing store and an admin da
 
 ## Live Links
 
-- **Customer Website:** [PASTE_LIVE_CUSTOMER_URL_HERE]
-- **Admin Dashboard:** [PASTE_LIVE_URL_HERE]/admin/login
-- **GitHub Repository:** [PASTE_GITHUB_REPO_URL_HERE]
+- **Customer Website:** https://simple-ecommerce-vert.vercel.app/
+- **Admin Dashboard:** https://simple-ecommerce-vert.vercel.app/admin/login
+- **GitHub Repository:** https://github.com/Y4nno/simple-ecommerce
 
 ## Admin Login Credentials
 
