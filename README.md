@@ -81,16 +81,42 @@ This project expects the following Supabase tables: `Product`, `Category`, `Orde
 3. Product Management, Category Management, Order Management, and Customer Management each pull live data from Supabase, with full CRUD where applicable (add/edit/delete products and categories, update order status).
 4. Category deletion is blocked with a warning if that category is still assigned to any product.
 5. Any change made on the admin side (new product, price update, product deactivated, order status changed) is reflected immediately on the customer-facing pages on next load, since both sides read from the same Supabase tables.
-
-## Known Simplifications
-
-Given the assessment timeline, a few deliberate simplifications were made:
-
-- **Admin RLS policies are scoped broadly** (`public` role) rather than tightly to `authenticated`, because simulated/real auth checks happen at the React route level via a `ProtectedRoute` component rather than exclusively through Postgres role-based policies.
-- **Customer Management has no dedicated accounts table** — customer records are derived by grouping `Order` rows by email, since the assessment doesn't require customer login/registration. "Status" on this page reflects "has placed at least one order," not a true account status.
-- **"My Orders" order tracking** (an optional bonus feature) is `localStorage`-based rather than tied to a real customer account, so it's only visible on the same browser/device that placed the order.
-- Category names are joined into product queries using Supabase's relational select syntax (`select('*, Category(Name)')`) rather than a separate lookup table client-side.
-
+   
 ## Screenshots
 
-Screenshots (desktop and mobile, customer and admin) are included in the `/screenshots` folder of this repository.
+**Desktop**
+
+Home
+<img width="1919" height="949" alt="image" src="https://github.com/user-attachments/assets/1446759d-d5a5-4143-9405-1d96472a615b" />
+
+Cart
+<img width="1919" height="940" alt="image" src="https://github.com/user-attachments/assets/4f95d7de-d505-4f98-aa4f-7ec4b4780e51" />
+
+Checkout
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/64d9fbe2-373d-41d9-87c3-77f49d99a847" />
+
+Products
+<img width="1919" height="861" alt="image" src="https://github.com/user-attachments/assets/a7c3aa96-5fd4-48bb-9997-b769608ade40" />
+
+**Mobile**
+
+Home
+<img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/0ce66f8e-7d71-46c8-8b67-3d466a15fd92" />
+
+Cart
+<img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/bb797caf-79a4-4fc8-9c2d-cc98d80e2cf1" />
+
+Checkout
+<img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/43ec35dd-4496-4db1-982e-5a150f95a45f" />
+
+Products
+<img width="900" height="2050" alt="image" src="https://github.com/user-attachments/assets/94e3a668-6994-49d5-b320-e9496db7431a" />
+
+
+
+
+
+
+
+
+
